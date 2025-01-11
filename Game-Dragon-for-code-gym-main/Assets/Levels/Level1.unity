@@ -8059,7 +8059,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &668477922
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8526,7 +8526,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1388438300447749892, guid: 1eb1320670a6a6d42b1e8bfe70f8aae0, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.31421363
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1388438300447749892, guid: 1eb1320670a6a6d42b1e8bfe70f8aae0, type: 3}
       propertyPath: m_LocalPosition.z
@@ -10314,7 +10314,7 @@ GameObject:
   - component: {fileID: 878710543}
   - component: {fileID: 878710545}
   - component: {fileID: 878710544}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: Wall1 (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12244,7 +12244,7 @@ GameObject:
   - component: {fileID: 1008396186}
   - component: {fileID: 1008396188}
   - component: {fileID: 1008396187}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: Wall1 (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16999,7 +16999,7 @@ GameObject:
   - component: {fileID: 1419363659}
   - component: {fileID: 1419363661}
   - component: {fileID: 1419363660}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Wall1 (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -19429,7 +19429,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1630552615}
   m_Layer: 0
-  m_Name: ======PLAYER========
+  m_Name: PLAYER
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -22361,7 +22361,7 @@ GameObject:
   - component: {fileID: 1895642926}
   - component: {fileID: 1895642928}
   - component: {fileID: 1895642927}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: Wall1 (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -22824,7 +22824,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1948467262}
   m_Layer: 0
-  m_Name: ======LEVEL=========
+  m_Name: LEVEL
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -23029,6 +23029,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1965397252}
   - component: {fileID: 1965397253}
+  - component: {fileID: 1965397254}
+  - component: {fileID: 1965397255}
   m_Layer: 0
   m_Name: Start (Idle)
   m_TagString: Untagged
@@ -23045,7 +23047,7 @@ Transform:
   m_GameObject: {fileID: 1965397251}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 7.75, y: -1.267, z: 0}
+  m_LocalPosition: {x: 8.58, y: -1.23, z: 0}
   m_LocalScale: {x: 5, y: 5, z: 5}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -23106,6 +23108,67 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1965397254
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1965397251}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8dfdf7ec11a5367478b00cf918aa801b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fadeTime: 1
+  fadeAnimator: {fileID: 0}
+  nextSceneName: Scene2
+--- !u!61 &1965397255
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1965397251}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.64, y: 0.64}
+    newSize: {x: 0.64, y: 0.64}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Size: {x: 0.64, y: 0.64}
+  m_EdgeRadius: 0
 --- !u!1 &1971624704
 GameObject:
   m_ObjectHideFlags: 0
@@ -24563,7 +24626,7 @@ GameObject:
   - component: {fileID: 2103912393}
   - component: {fileID: 2103912395}
   - component: {fileID: 2103912394}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Wall1 (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
