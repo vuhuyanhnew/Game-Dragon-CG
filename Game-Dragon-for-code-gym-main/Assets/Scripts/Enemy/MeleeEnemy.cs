@@ -2,19 +2,15 @@ using UnityEngine;
 
 public class MeleeEnemy : MonoBehaviour
 {
-    [Header("Attack Parameters")]
     [SerializeField] private float attackCooldown;
     [SerializeField] private float range;
     [SerializeField] private int damage;
 
-    [Header("Collider Parameters")]
     [SerializeField] private float colliderDistance;
     [SerializeField] private BoxCollider2D boxCollider;
 
-    [Header("Player Layer")]
     [SerializeField] private LayerMask playerLayer;
 
-    [Header("Movement Parameters")]
     [SerializeField] private float moveSpeed = 3f;
     [SerializeField] private float chaseDistance = 5f;
 

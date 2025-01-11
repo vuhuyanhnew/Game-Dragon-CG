@@ -15,7 +15,7 @@ public class SceneTransition : MonoBehaviour
     {
         if (collision.CompareTag("Player"))
         {
-            SceneManager.LoadScene("Level2"); 
+            SceneManager.LoadScene(nextSceneName); 
         }
     }
     private IEnumerator TransitionToNextScene()

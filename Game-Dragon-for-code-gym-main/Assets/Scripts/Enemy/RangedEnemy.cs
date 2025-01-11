@@ -2,24 +2,19 @@ using UnityEngine;
 
 public class RangedEnemy : MonoBehaviour
 {
-    [Header("Attack Parameters")]
     [SerializeField] private float attackCooldown;
     [SerializeField] private float range;
     [SerializeField] private int damage;
 
-    [Header("Ranged Attack")]
     [SerializeField] private Transform firepoint;
     [SerializeField] private GameObject[] fireballs;
 
-    [Header("Collider Parameters")]
     [SerializeField] private float colliderDistance;
     [SerializeField] private BoxCollider2D boxCollider;
 
-    [Header("Player Layer")]
     [SerializeField] private LayerMask playerLayer;
     private float cooldownTimer = Mathf.Infinity;
 
-    [Header("Fireball Sound")]
     [SerializeField] private AudioClip fireballSound;
 
     //References

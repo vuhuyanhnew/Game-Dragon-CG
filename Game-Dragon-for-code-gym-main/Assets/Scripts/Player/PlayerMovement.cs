@@ -2,27 +2,21 @@
 
 public class PlayerMovement : MonoBehaviour
 {
-    [Header("Movement Parameters")]
     [SerializeField] private float speed;
     [SerializeField] private float jumpPower;
 
-    [Header("Coyote Time")]
     [SerializeField] private float coyoteTime; 
     private float coyoteCounter; 
 
-    [Header("Multiple Jumps")]
     [SerializeField] private int extraJumps;
     private int jumpCounter;
 
-    [Header("Wall Jumping")]
-    [SerializeField] private float wallJumpX; //Horizontal wall jump force
-    [SerializeField] private float wallJumpY; //Vertical wall jump force
+    [SerializeField] private float wallJumpX;
+    [SerializeField] private float wallJumpY; 
 
-    [Header("Layers")]
     [SerializeField] private LayerMask groundLayer;
     [SerializeField] private LayerMask wallLayer;
 
-    [Header("Sounds")]
     [SerializeField] private AudioClip jumpSound;
 
     private Rigidbody2D body;
@@ -33,7 +27,6 @@ public class PlayerMovement : MonoBehaviour
 
     private void Awake()
     {
-        //Grab references for rigidbody and animator from object
         body = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
         boxCollider = GetComponent<BoxCollider2D>();
